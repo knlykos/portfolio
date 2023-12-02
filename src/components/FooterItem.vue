@@ -1,8 +1,4 @@
 <script setup lang="ts">
-// import logoOne from "../../public/logos/logoipsum-229.svg";
-// import logoTwo from "../../public/logos/logoipsum-259.svg";
-// import logoThree from "../../public/logos/logoipsum-261.svg";
-// import logoFour from "../../public/logos/logoipsum-289.svg";
 
 import {useFooterDataStore} from "@/stores/footer-data";
 

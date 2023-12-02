@@ -1,5 +1,17 @@
+<!-- HeroItem.vue -->
 <script setup lang="ts">
+/**
+ * Displays an Image with a custom text description
+ * This component extends to the full of its parent component
+ * @name HeroItem
+ */
 import sdBiker from "@/assets/jumper-2.png";
+import ButtonItem from "@/components/common-components/ButtonItem.vue";
+import router from "@/router";
+
+const goToPath = () => {
+  router.push('path')
+}
 </script>
 <template>
   <div
@@ -12,8 +24,8 @@ import sdBiker from "@/assets/jumper-2.png";
     }">
     <div class="flex flex-col m-10 items-start justify-center">
       <div class="text-5xl font-bold text-black font-kanit">SD Bike Paths</div>
-      <div class="text-2xl text-black">Your Ultimate Guide to San Diego's Cycling Trails</div>
-      <button class="bg-black p-2 pl-4 pr-4 rounded-3xl text-white font-kanit">BEST PATHS</button>
+      <div class="text-2xl text-white sm:text-black">Your Ultimate Guide to San Diego's Cycling Trails</div>
+      <ButtonItem @click="goToPath" tag="BEST PATHS"></ButtonItem>
     </div>
   </div>
 </template>

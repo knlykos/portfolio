@@ -1,4 +1,9 @@
+<!-- PathView.vue -->
 <script setup lang="ts">
+/**
+ * This component shows
+ * @name HeroItem
+ */
 import interactiveMap from './../assets/interactive-map.png'
 import HeaderItem from "@/components/HeaderItem.vue";
 import sdBikerBoxThree from "@/assets/sport-mountain-biking-womens-routing.jpg";
@@ -10,8 +15,8 @@ import {useRouteDataStore} from '@/stores/route-data'
 import {useCounterStore} from '@/stores/counter'
 import RouteArticlePreviewItem from "@/components/RouteArticlePreviewItem.vue";
 
+
 const routeState = useRouteDataStore()
-const counter = useCounterStore()
 const articles = routeState.routeData.articles
 const title = routeState.routeData.title
 const table = routeState.routeData.characteristicTable

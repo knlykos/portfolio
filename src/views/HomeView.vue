@@ -1,4 +1,10 @@
+<!-- HomeView.vue -->
 <script setup lang="ts">
+/**
+ * Home component for SD Bike Paths
+ * 
+ */
+
 
 import HeroItem from "@/components/home-components/HeroItem.vue";
 import OptionsItem from "@/components/home-components/OptionsItem.vue";

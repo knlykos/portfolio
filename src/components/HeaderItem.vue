@@ -5,28 +5,21 @@ import {
   DialogPanel,
   Disclosure,
   DisclosureButton,
-  DisclosurePanel,
   Popover,
   PopoverButton,
   PopoverGroup,
-  PopoverPanel,
 } from '@headlessui/vue'
 import {
-  ArrowPathIcon,
   Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/vue/24/outline'
-import {ChevronDownIcon, PhoneIcon, PlayCircleIcon} from '@heroicons/vue/20/solid'
+import {ChevronDownIcon} from '@heroicons/vue/20/solid'
 import router from "@/router";
 
 
 const mobileMenuOpen = ref(false)
 const navigateToMap = ($event) => {
-  router.push('/routes')
+  router.push('/path')
 }
 </script>
 <template>

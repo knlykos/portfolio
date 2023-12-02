@@ -76,14 +76,12 @@ const wrapperClass = 'flex flex-row justify-between items-center w-full h-full b
       />
     </svg>
     <svg width="100" height="10" xmlns="http://www.w3.org/2000/svg">
-      <!-- Fondo del Gauge -->
+
       <rect  width="100" height="10" fill="#ddd"/>
 
-      <!-- Valor Actual del Gauge -->
-      <!-- Cambia el atributo 'width' para representar el valor actual. Por ejemplo, 50% sería 100. -->
+
       <rect :width="props.percent" :style="{ transition: 'width 0.3s' }" height="10" fill="#4caf50"/>
 
-      <!-- Añadir más elementos o texto aquí si es necesario -->
     </svg>
     <div>{{ props.distanceTag }}</div>
   </div>
