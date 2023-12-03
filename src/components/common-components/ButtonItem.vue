@@ -1,10 +1,6 @@
 <!-- ButtonItem.vue -->
 <script setup lang="ts">
-/**
- * The awesome button
- * @name ButtonItem
- *
- */
+//The button is awesome; it will turn blue when the pointer hovers over it.
 const props = defineProps({
   tag: {
     /**

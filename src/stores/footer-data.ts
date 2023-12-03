@@ -1,6 +1,6 @@
 import {ref, computed} from 'vue'
 import {defineStore} from 'pinia'
-
+// useFooterDataStore is a simple json which has the list of svg files for the footer
 export const useFooterDataStore = defineStore('footerMetadata', () => {
     const metadata = ref({
         title: "Our Sponsors",

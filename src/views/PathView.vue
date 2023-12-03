@@ -5,15 +5,15 @@
  * @name HeroItem
  */
 import interactiveMap from './../assets/interactive-map.png'
-import HeaderItem from "@/components/HeaderItem.vue";
+import HeaderItem from "@/components/common-components/HeaderItem.vue";
 import sdBikerBoxThree from "@/assets/sport-mountain-biking-womens-routing.jpg";
-import GaugeItem from "@/components/GaugeItem.vue";
-import MapItem from "@/components/MapItem.vue";
-import RouteInfoItem from "@/components/RouteInfoItem.vue";
-import RouteDescription from "@/components/RouteArticlePreviewItem.vue";
+import GaugeItem from "@/components/common-components/GaugeItem.vue";
+import MapItem from "@/components/path-components/MapItem.vue";
+import RouteInfoItem from "@/components/path-components/RouteInfoItem.vue";
+import RouteDescription from "@/components/path-components/RouteArticlePreviewItem.vue";
 import {useRouteDataStore} from '@/stores/route-data'
 import {useCounterStore} from '@/stores/counter'
-import RouteArticlePreviewItem from "@/components/RouteArticlePreviewItem.vue";
+import RouteArticlePreviewItem from "@/components/path-components/RouteArticlePreviewItem.vue";
 
 
 const routeState = useRouteDataStore()

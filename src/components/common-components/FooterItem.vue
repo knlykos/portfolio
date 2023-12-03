@@ -1,7 +1,9 @@
 <script setup lang="ts">
 
 import {useFooterDataStore} from "@/stores/footer-data";
-
+// `footerStore` is an instance of `useFooterDataStore` that is used to simulate data from an external API.
+// Personal thoughts: The component is very simple. I added a JSON object to simulate the API.
+// With this approach, the component can be reused.
 const footerStore = useFooterDataStore()
 const title = footerStore.metadata.title
 const sponsors = footerStore.metadata.sponsors

@@ -1,7 +1,8 @@
 <script setup lang="ts">
 
 import router from "@/router";
-
+// This component use a prop articles which is an array of articles with title and description
+// the template iterate in the array to create list of articles.\
 const props = defineProps({
   articles: {
     type: Array,
@@ -10,12 +11,12 @@ const props = defineProps({
   },
 
 })
-
+// articleNumber is use it to create the number of article
 const articleNumber = (index: number) => {
   index++
   return (index <= 9) ? "0" + index : index
 }
-
+// The `clickOnArticle` function uses the router navigation function called `push` to navigate to the `/article` route.
 const clickOnArticle = ($event) => {
   console.log($event)
   router.push('/article')

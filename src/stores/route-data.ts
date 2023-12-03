@@ -1,7 +1,7 @@
 import {ref, computed} from 'vue'
 import {defineStore} from 'pinia'
 
-// Simulate a json coming from an API that is used by component RouteArticlePreviewItem.vue, RouteInfoItem.vue, PathView.vue and ArticleView.vue
+// Simulates a JSON object coming from an API, which is used by the components: RouteArticlePreviewItem.vue, RouteInfoItem.vue, PathView.vue, and ArticleView.vue.
 export const useRouteDataStore = defineStore('routeData', () => {
     const routeData = ref({
         title: "Bayshore Bikeway",

@@ -9,7 +9,6 @@ import router from "@/router";
 
 /**
  * The OptionsItem is a static component designed to display a series of boxes.
- * @name OptionsItem
  */
 
 /**

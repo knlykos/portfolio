@@ -1,25 +1,3 @@
-# wemake-responsive-page
-
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
@@ -32,40 +10,42 @@ npm install
 ```sh
 npm run dev
 ```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
+### Open this address in a web browser
 ```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
+http://localhost:5173/
 ```
+You will find a URL. Please copy and paste it into a web browser.
+## Comments on UI/UX and additional comments
+I really like the color palette using black and white and a grayscale,
+I associate this greatly with the simplicity of riding a bicycle and it significantly highlights the utility and simplicity of the interface.
 
-### Run End-to-End Tests with [Playwright](https://playwright.dev)
+You will find 3 views within the src/views folder, each view shows a section of the page.
+you will also find in src/components the list of used components.
+you will also find both static and dynamic components
+the static components will be plain HTML content without any logic.
+whereas the dynamic ones will use pinia as a store manager, this is used in a very simple manner, simulating an API
+you will also find very simple logic, it really serves to illustrate the functionality of the component in a simple way.
 
-```sh
-# Install browsers for the first run
-npx playwright install
+###please review this folders
+src/components
+src/views
+src/stores
 
-# When testing on CI, must build the project first
-npm run build
+## Open Source Libraries
+https://github.com/tailwindlabs/tailwindcss
+https://github.com/tailwindlabs/heroicons
+https://headlessui.com/
 
-# Runs the end-to-end tests
-npm run test:e2e
-# Runs the tests only on Chromium
-npm run test:e2e -- --project=chromium
-# Runs the tests of a specific file
-npm run test:e2e -- tests/example.spec.ts
-# Runs the tests in debug mode
-npm run test:e2e -- --debug
-```
+# Navigation
+1. http://localhost:5173/
+2. http://localhost:5173/path
+3. http://localhost:5173/article
 
-### Lint with [ESLint](https://eslint.org/)
 
-```sh
-npm run lint
-```
+
+
+1. Open home page http://localhost:5173/
+2. Click on trail maps in header bar or any button.
+3. On http://localhost:5173/path click on some article to go http://localhost:5173/article
+# Notes
+I used AI to generate content for the page

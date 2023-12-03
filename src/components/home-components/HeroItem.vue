@@ -1,10 +1,7 @@
 <!-- HeroItem.vue -->
 <script setup lang="ts">
-/**
- * Displays an Image with a custom text description
- * This component extends to the full of its parent component
- * @name HeroItem
- */
+// This component displays an image with a custom text description.
+// It extends to fill the entire space of its parent component.
 import sdBiker from "@/assets/jumper-2.png";
 import ButtonItem from "@/components/common-components/ButtonItem.vue";
 import router from "@/router";

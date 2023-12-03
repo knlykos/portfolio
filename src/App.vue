@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import {RouterLink, RouterView} from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
-import HeaderItem from "@/components/HeaderItem.vue";
-import FooterItem from "@/components/FooterItem.vue";
+import HeaderItem from "@/components/common-components/HeaderItem.vue";
+import FooterItem from "@/components/common-components/FooterItem.vue";
 </script>
 
 <template>

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import {ref} from 'vue'
 import {
   Dialog,
@@ -15,7 +15,7 @@ import {
 } from '@heroicons/vue/24/outline'
 import {ChevronDownIcon} from '@heroicons/vue/20/solid'
 import router from "@/router";
-
+// for this component I'm using tailwind approach for simplicity.
 
 const mobileMenuOpen = ref(false)
 const navigateToMap = ($event) => {

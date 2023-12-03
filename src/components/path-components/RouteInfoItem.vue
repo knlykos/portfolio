@@ -1,4 +1,6 @@
 <script setup lang="ts">
+// RouteInfoItem.vue receives a prop called 'data' which is used to populate the HTML table.
+// I use the v-for directive to iterate over the data and dynamically fill the table.
 const props = defineProps({
   data: {
     type: String,
